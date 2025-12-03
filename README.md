@@ -123,40 +123,22 @@ docker pull --platform linux/amd64 cleanstart/nats:latest
 docker pull --platform linux/arm64 cleanstart/nats:latest
 ```
 
-## 📚 Resources & Documentation
+## 📚 
+### Resources & Documentation  
+Essential links and resources for further information:
 
-### Essential Links
-
-* **CleanStart Website**: https://www.cleanstart.com
-* **NATS Official**: https://nats.io/
-* **NATS Documentation**: https://docs.nats.io/
-* **NATS GitHub**: https://github.com/nats-io
-
-### Reference:
-
-CleanStart All Images: https://images.cleanstart.com
- 
-CleanStart Community Images: https://hub.docker.com/u/cleanstart
- 
-View Provenance, Specifications, SBOM, Signature at https://images.cleanstart.com/images/nats
- 
-Other location for Community image: https://hub.docker.com/r/cleanstart/nats
-
-### Sample Project
-
-Check out the `sample-project` directory for a complete working example with:
-- Docker Compose configuration
-- Test scripts for Linux/Mac and Windows
-- Comprehensive README with examples
-- Pub/Sub demonstration
-
-## 🔗 Related Containers
-
-- **NATS Streaming**: For persistent streaming
-- **NATS JetStream**: For advanced streaming features
-- **NATS Surveyor**: For monitoring and observability
+- CleanStart Website: https://www.cleanstart.com
+- View Provenance, Specifications, SBOM, Signature at: https://images.cleanstart.com/images/nats
+- CleanStart All Images: https://images.cleanstart.com
+- CleanStart Community Images: https://hub.docker.com/u/cleanstart
+- Other location for Community image: https://hub.docker.com/r/cleanstart/nats
 
 ---
 
-**Need help?** Visit https://www.cleanstart.com for support and documentation.
+### Vulnerability Disclaimer
 
+CleanStart offers Docker images that include third-party open-source libraries and packages maintained by independent contributors. While CleanStart maintains these images and applies industry-standard security practices, it cannot guarantee the security or integrity of upstream components beyond its control.
+
+Users acknowledge and agree that open-source software may contain undiscovered vulnerabilities or introduce new risks through updates. CleanStart shall not be liable for security issues originating from third-party libraries, including but not limited to zero-day exploits, supply chain attacks, or contributor-introduced risks.
+
+Security remains a shared responsibility: CleanStart provides updated images and guidance where possible, while users are responsible for evaluating deployments and implementing appropriate controls.
