@@ -129,10 +129,6 @@ docker pull --platform linux/amd64 cleanstart/nats:latest
 docker pull --platform linux/arm64 cleanstart/nats:latest
 ```
 
-## 📚 
-
-###
-
 ## Resources
 
 - **Official Documentation:** https://docs.nats.io/
