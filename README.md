@@ -4,13 +4,13 @@ High-performance, lightweight NATS messaging server optimized for cloud-native a
 
 ## 🌟 Overview
 
-**Key Features:**
+- *Key Features:**
 - Complete NATS messaging server with monitoring capabilities
 - Support for pub/sub, request-reply, and queue groups
 - Built-in HTTP monitoring endpoints
 - Minimal resource footprint with high throughput
 
-**Common Use Cases:**
+- *Common Use Cases:**
 - Microservices communication and service mesh
 - Event-driven architectures and real-time messaging
 - IoT device communication and distributed system coordination
@@ -52,26 +52,32 @@ docker run -d \
 
 ### Access URLs
 
-* **NATS Client Port**: `nats://localhost:4222` - For client connections
-* **HTTP Monitoring**: `http://localhost:8222` - Server monitoring and stats
-* **Server Info**: `http://localhost:8222/varz` - Detailed server information
+- **NATS Client Port**: `nats://localhost:4222` - For client connections
+- **HTTP Monitoring**: `http://localhost:8222` - Server monitoring and stats
+- **Server Info**: `http://localhost:8222/varz` - Detailed server information
 
 ### Container Management
 
 ```bash
+
 # Check container status
+
 docker ps | grep nats
 
 # View logs
+
 docker logs nats-server
 
 # Follow logs in real-time
+
 docker logs -f nats-server
 
 # Stop container
+
 docker stop nats-server
 
 # Remove container
+
 docker rm nats-server
 ```
 
@@ -95,12 +101,12 @@ curl http://localhost:8222/connz
 
 ## 🎯 Best Practices
 
-* Use specific image tags for production (avoid `:latest`)
-* Configure resource limits: memory and CPU constraints
-* Enable monitoring endpoint for production deployments
-* Use persistent storage for JetStream (if enabled)
-* Implement proper security with authentication tokens
-* Monitor server metrics regularly via HTTP endpoints
+- Use specific image tags for production (avoid `:latest`)
+- Configure resource limits: memory and CPU constraints
+- Enable monitoring endpoint for production deployments
+- Use persistent storage for JetStream (if enabled)
+- Implement proper security with authentication tokens
+- Monitor server metrics regularly via HTTP endpoints
 
 ## 🌐 Client Libraries
 
@@ -124,16 +130,16 @@ docker pull --platform linux/arm64 cleanstart/nats:latest
 ```
 
 ## 📚 
-### 
-### Resources
 
-- Official Documentation: https://docs.nats.io/
-- View Provenance, Specifications, SBOM, Signature at: https://images.cleanstart.com/images/nats
-- Docker Hub: https://hub.docker.com/r/cleanstart/nats
-- CleanStart All Images: https://images.cleanstart.com
-- CleanStart All Community Images: https://hub.docker.com/u/cleanstart
+###
 
----
+## Resources
+
+- **Official Documentation:** https://docs.nats.io/
+- **Provenance / SBOM / Signature:** https://images.cleanstart.com/images/nats
+- **Docker Hub:** https://hub.docker.com/r/cleanstart/nats
+- **CleanStart All Images:** https://images.cleanstart.com
+- **CleanStart Community Images:** https://hub.docker.com/u/cleanstart
 
 ### Vulnerability Disclaimer
 
