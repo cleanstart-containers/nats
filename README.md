@@ -26,8 +26,8 @@ https://hub.docker.com/r/cleanstart/nats
 Download the container images:
 
 ```bash
-docker pull cleanstart/nats:latest
-docker pull cleanstart/nats:latest-dev
+docker pull ghcr.io/cleanstart-containers/nats:latest
+docker pull ghcr.io/cleanstart-containers/nats:latest-dev
 ```
 
 ### Interactive Development
@@ -35,7 +35,7 @@ docker pull cleanstart/nats:latest-dev
 Start interactive session for development:
 
 ```bash
-docker run --rm -it --entrypoint /bin/sh cleanstart/nats:latest-dev
+docker run --rm -it --entrypoint /bin/sh ghcr.io/cleanstart-containers/nats:latest-dev
 ```
 
 ### Container Start
@@ -47,7 +47,7 @@ docker run -d \
   --name nats-server \
   -p 4222:4222 \
   -p 8222:8222 \
-  cleanstart/nats:latest
+  ghcr.io/cleanstart-containers/nats:latest
 ```
 
 ### Access URLs
@@ -125,8 +125,8 @@ NATS has official client libraries for many languages:
 ### Multi-Platform Images
 
 ```bash
-docker pull --platform linux/amd64 cleanstart/nats:latest
-docker pull --platform linux/arm64 cleanstart/nats:latest
+docker pull --platform linux/amd64 nats:latest
+docker pull --platform linux/arm64 ghcr.io/cleanstart-containers/nats:latest
 ```
 
 ## Resources
